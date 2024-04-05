@@ -1,0 +1,57 @@
+@mixin container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  @mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  @mixin title {
+    &__wrapper {
+      text-align: center;
+    }
+  
+    &__title {
+      font-size: 2rem;
+      margin: 4rem 0 2rem;
+      color: $primary;
+      font-weight: 800;
+      color: white;
+      position: relative;
+      display: inline-block;
+  
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 50%;
+        height: 3px;
+        background-color: $primary;
+      }
+    }
+  }
+  
+  @mixin media-md {
+    @media screen and (min-width: 768px) {
+      @content;
+    }
+  }
+  
+  @mixin media-lg {
+    @media screen and (min-width: 1024px) {
+      @content;
+    }
+  }
+  
+  @mixin media-xl {
+    @media screen and (min-width: 1600px) {
+      @content;
+    }
+  }

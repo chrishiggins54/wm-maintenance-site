@@ -1,0 +1,39 @@
+.footer-container {
+  font-size: 0.9rem;
+  padding: 20px 0;
+  color: white;
+  background-color: $base-color;
+}
+
+.footer-social a {
+  color: $light-gray;
+  text-decoration: none;
+  margin: 0 2px;
+  display: inline-block;
+}
+
+.footer-social img {
+  width: 24px;
+  height: 24px;
+}
+
+.footer-contact a {
+  color: #4dad33;
+  text-decoration: none;
+}
+
+.footer-credit {
+  font-size: 0.75rem;
+  display: flex;
+  flex-direction: column;
+
+  p {
+    width: 100%;
+    text-align: center;
+
+    span {
+      color: #ff5349;
+      font-weight: 600;
+    }
+  }
+}

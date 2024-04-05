@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W.M. Maintenance</title>
+
+    <!-- AOS animations CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+
+</head>
+
+<body>
+    <!-- nav -->
+    <nav class="nav">
+        <div class="nav__upper">
+            <div class="nav__logo-social-container">
+                <img class="nav__logo-image" src="img/wm-maintenance-navbar-logo.png" alt="Logo">
+                <ul class="nav__social-icons">
+                    <li><a href="https://www.facebook.com/wmmaintenanceireland/" target="_blank"
+                            rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.instagram.com/wmmaintenance/" target="_blank" rel="noopener noreferrer"
+                            aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://wa.me/+894101609" target="_blank" rel="noopener noreferrer"
+                            aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <ul class="nav__menu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="nav__menu-btn"><i class="fas fa-bars-staggered"></i></button>
+        <ul class="nav__dropdown-menu" id="dropdownMenu">
+            <li class="nav__dropdown-menu-item"><a href="#about">About</a></li>
+            <li class="nav__dropdown-menu-item"><a href="#services">Services</a></li>
+            <li class="nav__dropdown-menu-item"><a href="#gallery">Gallery</a></li>
+            <li class="nav__dropdown-menu-item"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="main-section">
+
+        <!-- Intro section -->
+        <section class="intro" id="intro" data-aos="zoom-in-up" data-aos-delay="500">
+            <div class="responsive-container">
+                <img src="img/powerwash.jpeg" alt="Image 1">
+                <!-- Overlay Text -->
+                <div class="centered-text">
+                    <div class="centered-text__header">
+                        <h3>Welcome to</h3>
+                        <div class="centered-text__header-color">
+                            WM Maintenance</div>
+                    </div>
+                    <h2>Home & Garden Improvements</h2>
+                    <button type="button" class="btn btn btn-light centered-text__button"
+                        onclick="location.href='#services'"> <i class="fas fa-wrench"></i>&nbsp;&nbsp;Our Services
+                    </button>
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+    <!-- About section -->
+    <section class="about" id="about" data-aos="fade-up" data-aos-delay="300">
+        <div class="container">
+            <div class="about-img">
+                <img src="img\company-van.jpg">
+            </div>
+            <div class="about-text">
+                <h3>WM Maintenance</h3>
+                <h4>Home & Garden Improvements</h3>
+                    <br>
+                    <br>
+                    <p> I offer my expert skills in painting, power washing, and
+                        cleaning
+                        both
+                        rooftops
+                        and gardens, throughout Galway, Dublin,
+                        Athlone, Roscommon, and the surrounding areas.</p>
+                    <p>I came to Ireland from Brazil, and I've made this country my second home. I love the challenge of
+                        tackling your projects,
+                        big or small, with the same care and attention to detail, no matter the Irish weather!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services section -->
+    <section class="services" id="services" data-aos="fade-up" data-aos-delay="300">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-item painting">
+                    <i class="fa-solid fa-paint-roller service-icon"></i>
+                    <h4>Painting</h4>
+                    <p>Professional painting services for interiors and exteriors, ensuring a fresh and updated
+                        look
+                        for
+                        your property.</p>
+                </div>
+                <div class="service-item power-washing">
+                    <i class="fa-solid fa-water service-icon"></i>
+                    <h4>Power Washing</h4>
+                    <p>High-pressure cleaning to rejuvenate your driveways, decks, and patios, removing dirt and
+                        grime
+                        effectively.</p>
+                </div>
+                <div class="service-item cleaning">
+                    <i class="fa-solid fa-broom service-icon"></i>
+                    <h4>Cleaning</h4>
+                    <p>Comprehensive cleaning solutions for rooftops and gardens to maintain a neat and
+                        welcoming
+                        environment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery" data-aos="fade-up" data-aos-delay="300">
+        <div class="container">
+            <h2 class="gallery-title">Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <a href="img/wall.jpg" class="gallery-link">
+                        <img src="img/wall.jpg" alt="Gallery Image 1">
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="img/house.jpg" class="gallery-link">
+                        <img src="img/house.jpg" alt="Gallery Image 2">
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="img/footpath.jpg" class="gallery-link">
+                        <img src="img/footpath.jpg" alt="Gallery Image 3">
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="img/windows.jpg" class="gallery-link">
+                        <img src="img/windows.jpg" alt="Gallery Image 4">
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="img/garden.jpg" class="gallery-link">
+                        <img src="img/garden.jpg" alt="Gallery Image 4">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="lightbox-modal" class="lightbox-modal" style="display: none;">
+            <span class="lightbox-close">&times;</span>
+            <img class="lightbox-content">
+            <div class="lightbox-caption"></div>
+            <a class="lightbox-prev" onclick="changeImage(-1)">&#10094;</a>
+            <a class="lightbox-next" onclick="changeImage(1)">&#10095;</a>
+        </div>
+
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <form class="contact-form" action="https://formspree.io/f/mpzvozqq" method="POST">
+                <input type="text" id="name" name="sender-name" placeholder="Your Name" class="input-field" required>
+                <input type="text" id="email" name="sender-email" placeholder="Your Email" class="input-field" required>
+                <input id="message" name="sender-message" placeholder="Your message" class="input-field" required
+                    style='height:150px'>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-container">
+        <div class="container">
+            <div class="row">
+                <!-- Column 1 -->
+                <div class="col-5 align-items-end justify-content-center">
+                    <div class="footer-contact mb-5">
+                        <h5>Contact Us:</h5>
+                        <p>Phone:<br><a href="tel:+0894101609">089 410 1609</a></p>
+                        <p>Email:<br><a href="mailto:info@cleanplus.ie">webermarques81@outlook.com</a></p>
+                    </div>
+                    <div>
+                        <h5>Areas We Cover:</h5>
+                        <p>Galway, Dublin,
+                            <br> Athlone, Roscommon
+                        </p>
+                    </div>
+                </div>
+                <!-- Column 2 -->
+                <div class="col-4 d-flex align-items-end justify-content-center">
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/wmmaintenanceireland/" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="fab fa-facebook-square fa-2x"></i>
+                        </a>
+                        <a href="https://www.instagram.com/wmmaintenance/" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-instagram-square fa-2x"></i>
+                        </a>
+                        <a href="https://wa.me/+894101609" target="_blank" rel="noopener noreferrer"
+                            aria-label="WhatsApp"><i class="fab fa-whatsapp-square fa-2x"></i></a>
+                    </div>
+                </div>
+                <!-- Column 3 -->
+                <div class="col-3 d-flex align-items-end justify-content-end footer-credit">
+                    <p>Design By <span>Chris H.</span>
+                    </p>
+                </div>
+            </div>
+    </footer>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="js/main.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,163 @@
+// Variables
+$nav-active: #4dad33;
+$base-color: #004a80; // Dark blue from the logo
+$accent-color: #00733e; // Green from the logo
+$font-stack: "Open Sans", sans-serif;
+
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: blur(12px);
+  background-color: #f9f9f9;
+
+  &__upper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+
+    &.hidden {
+      display: none;
+    }
+  }
+
+  &__logo-social-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+    padding-right: 20px;
+  }
+
+  &__logo-image {
+    height: 100px;
+    margin-right: 20px;
+  }
+
+  &__social-icons {
+    display: flex;
+    list-style: none;
+    width: 250px;
+
+    li {
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        color: $base-color;
+        text-decoration: none;
+
+        &:hover {
+          color: $nav-active;
+        }
+
+        i {
+          font-size: 1.5rem;
+          transition: color 0.3s ease;
+        }
+      }
+    }
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    background-color: $base-color;
+    height: 40px;
+    margin: 0;
+
+    li {
+      margin: 0 3rem;
+      a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 1rem;
+        transition: color 0.3s ease;
+
+        &:hover,
+        &.active {
+          color: $nav-active;
+        }
+      }
+    }
+  }
+
+  &__menu-btn {
+    display: none;
+  }
+  &__dropdown-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    background-color: $base-color;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    &.is-visible {
+      display: flex;
+      flex-direction: column;
+    }
+
+    li {
+      width: 100%;
+
+      a {
+        width: 100%;
+
+        display: block;
+        padding: 1rem;
+        color: white;
+        text-decoration: none;
+
+        &:hover,
+        &.active {
+          background-color: rgba(0, 0, 0, 0.1);
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+    .nav {
+      &__menu-btn {
+        display: block;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 0.5rem;
+        margin-right: 1rem;
+
+        i {
+          font-size: 2rem;
+          color: $base-color;
+          transition: transform 0.3s ease;
+
+          &:hover {
+            transform: rotate(360deg);
+            color: $nav-active;
+          }
+        }
+      }
+
+      &__menu,
+      &__social-icons {
+        display: none;
+      }
+
+      &__dropdown-menu {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+@import "base/variables";
+@import "base/mixins";
+@import "layouts/navbar";
+@import "layouts/intro";
+@import "layouts/about";
+@import "layouts/services";
+@import "layouts/gallery";
+@import "layouts/contact";
+@import "layouts/footer";
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Define base styles and variables
+$base-color: #004a80; // Dark blue from the logo
+$accent-color: #00733e; // Green from the logo
+$main-font: "Open Sans", sans-serif;
+$secondary-font: "Laro", sans-serif;
+
+html,
+body {
+  font-family: $main-font;
+  color: $base-color;
+  background-color: #f9f9f9;
+}
+
+.hero-page {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+// Utilize Bootstrap's grid system for layout
+// and overwrite Bootstrap variables to match your color scheme
+$theme-colors: (
+  "primary": $base-color,
+  "secondary": $accent-color,
+);
+
+// Use Bootstrap's mixins for responsive typography
+@include media-breakpoint-up(sm) {
+  .section-title {
+    font-size: 2rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .section-title {
+    font-size: 2.5rem;
+  }
+}
