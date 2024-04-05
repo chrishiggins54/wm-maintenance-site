@@ -1,3 +1,7 @@
+if ('scrollRestoration' in history) {
+  history.scrollRestoration = 'manual';
+}
+
 // Toggle dropdown menu
 function toggleDropdownMenu() {
   const menuBtn = document.querySelector('.nav__menu-btn');
@@ -111,6 +115,25 @@ function handleLightbox() {
     }
   });
 }
+document.addEventListener('DOMContentLoaded', function() {
+  const menuButton = document.querySelector('.nav__menu-btn');
+  
+  function checkScrollForMenuButton() {
+    let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+    const topThreshold = 100; 
+    const screenWidthThreshold = 767;
+
+    if (window.innerWidth <= screenWidthThreshold && currentScroll > topThreshold) {
+      menuButton.style.display = 'block';
+    } else {
+      menuButton.style.display = 'none'; 
+    }
+  }
+
+  checkScrollForMenuButton();
+
+  window.addEventListener('scroll', checkScrollForMenuButton);
+});
 
 
 document.addEventListener('DOMContentLoaded', function() {

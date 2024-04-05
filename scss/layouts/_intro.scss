@@ -5,13 +5,6 @@ $dark-gray: #333;
 $light-blue: lighten($base-color, 20%);
 $secondary-font: "Lato", sans-serif;
 
-.intro {
-  height: calc(100vh - 140px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .responsive-container {
   position: relative;
   width: 100%;
@@ -36,21 +29,39 @@ $secondary-font: "Lato", sans-serif;
   color: #ffffff;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
   width: 600px;
+}
 
-  &__header {
-    font-size: 4em;
-    font-weight: 800;
-  }
+.centered-text__header {
+  font-size: 4em;
+  font-weight: 800;
+}
 
-  &__header-color {
-    color: $accent-color;
-  }
+.centered-text__header-color {
+  color: $accent-color;
+}
 
-  &__button {
-    margin-top: 1em;
-  }
+.centered-text__button {
+  margin-top: 1em;
 }
 
 .centered-text h3 {
   font-family: "Lato", sans-serif;
+}
+
+@media (max-width: 768px) {
+  .centered-text {
+    width: 80%;
+  }
+
+  .centered-text__header {
+    font-size: 2.5em;
+  }
+
+  .centered-text h3 {
+    font-size: 1.5em;
+  }
+
+  .centered-text__button {
+    padding: 0.5em 1em;
+  }
 }
