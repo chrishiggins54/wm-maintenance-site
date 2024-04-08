@@ -14,7 +14,7 @@ $secondary-font: "Lato", sans-serif;
 
 .responsive-container img {
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 140px);
   object-fit: cover;
   filter: blur(2px);
 }
