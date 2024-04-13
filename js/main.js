@@ -98,19 +98,11 @@ function handleLightbox() {
     }
 
     function showLightbox(index) {
-    currentIndex = index;
-    const imageSrc = galleryItems[currentIndex].getAttribute('href');
-    popup.style.display = 'flex';
-    lightboxContent.src = imageSrc;
-    window.scrollTo(0, calculateScrollPositionForLightbox());
-}
-
-function calculateScrollPositionForLightbox() {
-    const viewportHeight = window.innerHeight;
-    const lightboxHeight = lightboxContent.clientHeight;
-    return (viewportHeight - lightboxHeight) / 2 + window.pageYOffset;
-}
-
+      currentIndex = index;
+      const imageSrc = galleryItems[currentIndex].getAttribute('href');
+      popup.style.display = 'flex';
+      lightboxContent.src = imageSrc;
+    }
 
     function changeImage(step) {
       let newIndex = currentIndex + step;
